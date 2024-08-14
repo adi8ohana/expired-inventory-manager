@@ -1,0 +1,79 @@
+{
+  "hash": "c5c7b972",
+  "configHash": "612eba1f",
+  "lockfileHash": "68473f49",
+  "browserHash": "57d55009",
+  "optimized": {
+    "@angular/core": {
+      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "009e6ad7",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "d7a8cb7e",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "2c096ed4",
+      "needsInterop": false
+    },
+    "primeng/api": {
+      "src": "../../../../../node_modules/primeng/fesm2022/primeng-api.mjs",
+      "file": "primeng_api.js",
+      "fileHash": "7592d97a",
+      "needsInterop": false
+    },
+    "primeng/table": {
+      "src": "../../../../../node_modules/primeng/fesm2022/primeng-table.mjs",
+      "file": "primeng_table.js",
+      "fileHash": "eb0a7a3d",
+      "needsInterop": false
+    },
+    "primeng/inputtext": {
+      "src": "../../../../../node_modules/primeng/fesm2022/primeng-inputtext.mjs",
+      "file": "primeng_inputtext.js",
+      "fileHash": "ca9e3094",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "3503291a",
+      "needsInterop": false
+    },
+    "primeng/floatlabel": {
+      "src": "../../../../../node_modules/primeng/fesm2022/primeng-floatlabel.mjs",
+      "file": "primeng_floatlabel.js",
+      "fileHash": "537f4b51",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-TQMMBGB2": {
+      "file": "chunk-TQMMBGB2.js"
+    },
+    "chunk-TYN374TZ": {
+      "file": "chunk-TYN374TZ.js"
+    },
+    "chunk-IEZBSWOJ": {
+      "file": "chunk-IEZBSWOJ.js"
+    },
+    "chunk-S2AWYDXC": {
+      "file": "chunk-S2AWYDXC.js"
+    },
+    "chunk-QESTRYIY": {
+      "file": "chunk-QESTRYIY.js"
+    },
+    "chunk-K5NIXOD5": {
+      "file": "chunk-K5NIXOD5.js"
+    },
+    "chunk-HZEFKQQ5": {
+      "file": "chunk-HZEFKQQ5.js"
+    }
+  }
+}
