@@ -1,0 +1,62 @@
+<body>
+  <div id="background-div">
+
+  </div>
+  <div id="content">
+    <h1 >דיווח פגי תוקף</h1> 
+    <h4>נא לסמן את הציוד שנבדק</h4> 
+    <div id="input-section">
+      <p-floatLabel id="ambulance-number">
+        <input 
+            pInputText 
+            id="ambulance-input" 
+            type="number"
+            [(ngModel)]="value" />
+            <label for="number">מספר אמבולנס</label>
+      </p-floatLabel>
+      <p-floatLabel id="name">
+        <input 
+            pInputText 
+            id="fullname" 
+            type="text"
+            [(ngModel)]="value" />
+            <label for="fullname">TEST</label>
+      </p-floatLabel>
+    </div>
+    <p-table
+      #myTab 
+      [value]="tableData" 
+      [scrollable]="true" 
+      scrollHeight="400px"
+      selectionMode="multiple"
+      (onRowSelect)="onRowSelect($event)"> 
+      <ng-template pTemplate="header"> 
+        <tr> 
+          <th> 
+            Radio Controls 
+          </th> 
+          <th>First Name</th> 
+          <th>Last Name</th> 
+          <th>Age</th> 
+        </tr> 
+      </ng-template> 
+
+      <ng-template pTemplate="body" let-people> 
+        <tr [pSelectableRow]="people"> 
+          <td> 
+            <p-tableCheckbox [value]="people"></p-tableCheckbox>
+          </td> 
+          <td> 
+            {{ people.firstname }} 
+          </td> 
+          <td> 
+            {{ people.lastname }} 
+          </td> 
+          <td> 
+            {{ people.age }} 
+          </td> 
+        </tr> 
+      </ng-template> 
+    </p-table>
+  </div>
+</body>
