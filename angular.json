@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "baseHref": "/expired-mda.github-io/",
+            "baseHref": "/expired-mda/",
             "outputPath": "dist/expired-inventory-manager",
             "index": "index.html",
             "browser": "src/main.ts",
