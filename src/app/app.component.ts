@@ -3,66 +3,47 @@ import { TableModule } from 'primeng/table';
 import { InputTextModule } from 'primeng/inputtext';
 import { FormsModule } from '@angular/forms';
 import { FloatLabelModule } from 'primeng/floatlabel';
+import { ButtonModule } from 'primeng/button';
 
-interface People { 
-	firstname?: string; 
-	lastname?: string; 
-	age?: string; 
+interface RowObj { 
+	fullname?: string; 
+	counter?: string; 
 } 
 
 @Component({ 
-	selector: 'app-root', 
+	selector: 'expired', 
 	templateUrl: './app.component.html', 
 	styleUrl: './app.component.css',
 	imports: [TableModule,
             InputTextModule,
             FormsModule,
-            FloatLabelModule
+            FloatLabelModule,
+			ButtonModule
   ],
   standalone: true
 }) 
 export class AppComponent { 
-	tableData: People[] = []; 
-	cols: any[] = []; 
-  	value: string = "";
+	tableData: RowObj[] = []; 
+  	AmbulanceNumber: string = "";
+  	FullName: string = "";
+	
 	constructor() { } 
 
 	ngOnInit() { 
-		this.cols = [ 
-			{ field: 'firstname', header: 'First Name' }, 
-			{ field: 'lastname', header: 'Last Name' }, 
-			{ field: 'age', header: 'Age' }, 
-		]; 
 		this.tableData = [ 
 			{ 
-				firstname: 'David', 
-				lastname: 'ace', 
-				age: '40', 
+				fullname: 'David', 
+				counter: '40', 
 			}, 
 			{ 
-				firstname: 'AJne', 
-				lastname: 'west', 
-				age: '40', 
+				fullname: 'AJne', 
+				counter: '40', 
 			}, 
 			{ 
-				firstname: 'Mak', 
-				lastname: 'Lame', 
-				age: '40', 
-			}, 
-			{ 
-				firstname: 'Peter', 
-				lastname: 'raw', 
-				age: '40', 
-			}, 
-			{ 
-				firstname: 'Kane', 
-				lastname: 'James', 
-				age: '40', 
-			}, 
+				fullname: 'Mak', 
+				counter: '30', 
+			},
 		]; 
 	} 
 
-  onRowSelect(event: any) {
-
-  }
 } 
