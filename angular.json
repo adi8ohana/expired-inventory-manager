@@ -25,8 +25,7 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              },
-              "public/favicon.ico"
+              }
             ],
             "styles": [
               "src/styles.css"
