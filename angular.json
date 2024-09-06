@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "baseHref": "/expired-mda/",
+            "baseHref": "/expired-inventory-manager/",
             "outputPath": "dist/expired-inventory-manager",
             "index": "index.html",
             "browser": "src/main.ts",
@@ -25,7 +25,8 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "public/favicon.ico"
             ],
             "styles": [
               "src/styles.css"
