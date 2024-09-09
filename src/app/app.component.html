@@ -1,52 +1,50 @@
-<body>
-  <div id="background-div">
+<div id="background-div">
+</div>
+<div id="content">
+  <h1 >דיווח פגי תוקף</h1> 
+  <div id="input-section">
+    <p-floatLabel>
+      <input 
+          pInputText 
+          id="ambulance-input" 
+          type="number"
+          [(ngModel)]="AmbulanceNumber" />
+      <label for="ambulance-input" id="textAmbulanceNum">מספר אמבולנס</label>
+    </p-floatLabel>
+    <p-floatLabel>
+      <input 
+          pInputText 
+          id="fullname" 
+          type="text"
+          [(ngModel)]="FullName" />
+      <label for="fullname" id="textFullName">שם מלא</label>
+    </p-floatLabel>
+    <p-button label="שלח" />
   </div>
-  <div id="content">
-    <h1 >דיווח פגי תוקף</h1> 
-    <div id="input-section">
-      <p-floatLabel>
-        <input 
-            pInputText 
-            id="ambulance-input" 
-            type="number"
-            [(ngModel)]="AmbulanceNumber" />
-        <label for="ambulance-input" id="textAmbulanceNum">מספר אמבולנס</label>
-      </p-floatLabel>
-      <p-floatLabel>
-        <input 
-            pInputText 
-            id="fullname" 
-            type="text"
-            [(ngModel)]="FullName" />
-        <label for="fullname" id="textFullName">שם מלא</label>
-      </p-floatLabel>
-      <p-button label="שלח" />
-      </div>
-      <p-table 
-        [value]="tableData" 
-        styleClass="p-datatable-gridlines" >
-          <ng-template pTemplate="header">
-            <th>
-              <p-columnFilter class="numFilter" 
-                  type="text" 
-                  field="fullname" 
-                  placeholder="סינון לפי מספר" 
-                  ariaLabel="Filter Country"
-                   />
-          </th>
-              <tr>
-                  <th class="col">מספר אמבולנס</th>
-                  <th class="col">מספר בדיקות</th>
+  <p-table 
+    [value]="tableData" 
+    styleClass="p-datatable-gridlines" >
+      <ng-template pTemplate="header">
+        <th>
+          <p-columnFilter class="numFilter" 
+              type="text" 
+              field="fullname" 
+              placeholder="סינון לפי מספר" 
+              ariaLabel="Filter Country"
+                />
+      </th>
+          <tr>
+              <th class="col">מספר אמבולנס</th>
+              <th class="col">מספר בדיקות</th>
 
-              </tr>
-          </ng-template>
-          <ng-template pTemplate="body" let-row>
-              <tr>
-                  <td class="col">{{ row.fullname }}</td>
-                  <td class="col">{{ row.counter }}</td>
+          </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-row>
+          <tr>
+              <td class="col">{{ row.fullname }}</td>
+              <td class="col">{{ row.counter }}</td>
 
-              </tr>
-          </ng-template>
-      </p-table>
-    </div>
-</body>
+          </tr>
+      </ng-template>
+  </p-table>
+</div>
