@@ -15,7 +15,7 @@
           "options": {
             "baseHref": "/expired-inventory-manager/",
             "outputPath": "dist/expired-inventory-manager",
-            "index": "index.html",
+            "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
